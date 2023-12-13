@@ -24,11 +24,11 @@ function crearClasePersona() {
       // No debe retornar nada.
 
       // Tu código aca:
-      var nuevoamigo = {
+      let nuevoAmigo = {
         nombre : nombre,
         edad : edad,
       }
-      this.amigos.push(nuevoamigo)
+      this.amigos.push(nuevoAmigo)
 
     }
 
@@ -51,7 +51,7 @@ function crearClasePersona() {
       if (!this.amigos){
         return []
       }
-      var arreglodenombres = []
+      let arreglodenombres = []
 
       for( let i =0 ; i < this.amigos.length; i++){
         arreglodenombres.push(this.amigos[i].nombre)
@@ -86,15 +86,15 @@ function crearClasePersona() {
       // persona.getPromedioEdad() debería devolver 29 ya que (33 + 25) / 2 = 29
 
       // Tu código aca:
-      var edades = []
+      let edades = []
       for (let i = 0 ; i < this.amigos.length; i++){
         edades.push(this.amigos[i].edad)
       } 
-      var sumaedades = 0
-      for (var j in edades){
+      let sumaedades = 0
+      for (let j in edades){
         sumaedades = sumaedades + edades[j]
       }
-      var promedioedad = sumaedades / edades.length 
+      let promedioedad = sumaedades / edades.length 
       return promedioedad
     }
   };

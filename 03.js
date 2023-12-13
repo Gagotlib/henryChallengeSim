@@ -19,8 +19,6 @@ function buscarAmigo(amigos, nombre) {
       return amigos[i]
     }
   }  
-  
-
 }
 
 // No modifiques nada debajo de esta linea //

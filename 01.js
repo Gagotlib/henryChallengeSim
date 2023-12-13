@@ -12,7 +12,7 @@ function soloNumeros(array) {
 
   // Tu código aca:
 
-  var numeros = []
+  let numeros = []
   for (let i=0 ; i < array.length ; i++){
     if (typeof array[i] == "number") {
       numeros.push(array[i])
@@ -20,6 +20,7 @@ function soloNumeros(array) {
   }
   return numeros
 }
+
 
 // No modifiques nada debajo de esta linea //
 
